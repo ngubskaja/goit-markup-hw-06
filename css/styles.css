@@ -629,15 +629,13 @@ color: var(--accent-color);
   background-color: transparent;
   outline: transparent;
   cursor: pointer;
-  transition-property: border-color;
-  transition-duration: var(--duration-time);
-  transition-timing-function: var(--time-allocation);
+  transition: border-color var(--animation);
 }
 
 
 
 .footer-social-send{
-  margin-left: 93px;
+  margin-left: auto;
 }
 .input-footer:hover,
 .input-footer:focus {
@@ -898,10 +896,11 @@ color: var(--accent-color);
 
 .modal-text{
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-size: 20px;
   line-height: 23px;
 }
+
 
 .modal-contact-container{
   margin-bottom: 10px;
@@ -937,19 +936,26 @@ color: var(--accent-color);
 }
 
 
+
+
 .modal-contact-icon{
   position: absolute;
-  padding-top: auto;
   left: 12px;
-  transform: translateY(11px);
+  cursor: pointer;
+  bottom: 11px;
   color: var(--main-txt-light);
   transition:fill var(--animation);
 }
 
+.modal-comm{
+  display: block;
+  line-height: 23px;
+}
 
 .modal-comment-text{
   font-weight: 400;
   font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.01em;
   color:var(--p-color);
 }
@@ -1038,7 +1044,6 @@ color: var(--accent-color);
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
   padding: 10px 32px;
   min-width: 200px;
   box-shadow: rgb(0 0 0 / 15%) 0px 4px 4px;
